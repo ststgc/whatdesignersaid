@@ -7,6 +7,8 @@ found_title: Vignelli Canon
 found_url: http://www.vignelli.com/canon.pdf
 images:
   - scroll.gif
+
+has_memo: true
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus recusandae officia unde maxime ad quos suscipit vero facilis perferendis sed, libero, voluptatibus incidunt facere, veniam, illum dignissimos at. Consequatur, itaque.
