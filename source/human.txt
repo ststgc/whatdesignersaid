@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# AUTHOR
+  Designer: Shota Setoguchi 
+  Contact: ststgc@gmail.com
+  Twitter: @ststgc
+  From: Tokyo, Japan
+
+
+# SITE
+  Standards: HTML5, CSS3, Coffee Script
+  Libraries: jQuery
+  Generator: Middleman
+  Deploy: Github Pages
+  Editor: Sublime Text

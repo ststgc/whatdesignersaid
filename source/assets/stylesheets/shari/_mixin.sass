@@ -1,0 +1,25 @@
+//------------------------------------
+//    Shari: Mixin
+//------------------------------------
+
+
+
+//
+// Media query mixin.
+//
+// Example:
+// `+breakpoint(lap)`
+//
+
+
+=breakpoint($breakpoint)
+  @if $breakpoint == lap
+    @media only screen and (min-width: $lap-start)
+      @content
+  @if $breakpoint == desk
+    @media only screen and (min-width: $desk-start)
+      @content
+
+  @if $breakpoint == desk-wide
+    @media only screen and (min-width: $desk-wide-start)
+      @content

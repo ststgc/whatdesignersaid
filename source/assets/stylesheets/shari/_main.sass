@@ -1,0 +1,50 @@
+//------------------------------------
+//   Shari: Main
+//------------------------------------
+
+html
+  // Set base typography; open config.sass to set yours
+  font: #{$base-font-size}/#{$baseline-unitless} $font-Body
+  -webkit-font-smoothing: antialiased
+  -webkit-text-size-adjust: 100%
+  -ms-text-size-adjust: 100%
+  text-rendering: optimizeLegibility
+
+  color: $body-text-color
+  background-color: $body-background
+
+  // Activate font feature settings depends on the typeface you chose
+  //
+  // Feature tags:
+  // http://partners.adobe.com/public/developer/opentype/index_tag3.html
+  // http://elliotjaystocks.com/blog/a-recap-on-opentype-features/
+  font-feature-settings: "liga" 1
+  font-feature-settings: "onum" 1
+
+
+  // fit content to window size
+  // +breakpoint(lap)
+    // font-size: 137.5%
+
+
+
+// body settings
+body
+  overflow-x: hidden
+
+  padding:
+    right: $baseline/2
+    left: $baseline/2
+
+  +breakpoint(lap)
+    padding:
+      right: $baseline
+      left: $baseline
+
+
+
+
+// Selection
+::selection
+  background-color: transparentize($brand-primary, $selection-transparentize)
+  color: $selection-text-color

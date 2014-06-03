@@ -1,0 +1,107 @@
+//------------------------------------
+//    $Base Unit Sizes
+//------------------------------------
+//
+// Key values of vertical rhythm.
+// Find an appropriate font size for your body text,
+// then set your line-height. It’s always helpful to see
+// Tim Browns’s moduler scale.
+//
+// Read on:
+// http://ia.net/blog/the-web-is-all-about-typography-period/
+// http://coding.smashingmagazine.com/2011/03/14/technical-web-typography-guidelines-and-techniques/#tt-rhythm
+// http://alistapart.com/article/settingtypeontheweb
+// http://modularscale.com/
+// http://vimeo.com/17079380
+// http://alistapart.com/article/more-meaningful-typography
+// http://jasonsantamaria.com/articles/baseline-grids-on-the-web
+//
+// Books:
+// - Thinking with Type
+// - The elements of typographic style
+// - 僕のつくった書体
+// - 欧文書体 1, 2
+//
+
+$basefont-unitless:     18
+$base-font-size:        ($basefont-unitless/16)*100%
+$baseline-unitless:     27 / $basefont-unitless
+$baseline:              $baseline-unitless * 1rem
+
+
+
+
+
+
+
+
+
+//------------------------------------
+//    $FONTS
+//------------------------------------
+//
+// Know the story behind the font as much as you can.
+// Then consider whether it fits your project.
+//
+$font-Body:    "Avenir Next", Avenir, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif
+// $font-Serif:   "Adobe Caslon Pro", Georgia, YuMincho, "游明朝", serif
+$font-Sans:    "Avenir Next", Avenir, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif
+
+
+
+
+
+
+
+
+
+//------------------------------------
+//    $COLORS
+//------------------------------------
+// Keep them tidy.
+
+// Color: Glayscale
+// Change the color
+// http://blog.typekit.com/2011/01/26/css-properties-that-affect-type-rendering/
+
+$white:           #fff
+$white-grayscale: #f5f5f5
+$black-10:        darken($white-grayscale, 10%)
+$black-20:        darken($white-grayscale, 20%)
+$black-30:        darken($white-grayscale, 30%)
+$black-40:        darken($white-grayscale, 40%)
+$black-50:        darken($white-grayscale, 50%)
+$black-60:        darken($white-grayscale, 60%)
+$black-70:        darken($white-grayscale, 70%)
+$black-80:        darken($white-grayscale, 80%)
+$black-90:        darken($white-grayscale, 90%)
+
+
+// Color: Semantic
+// Add yoru color with purpose. Meaningful color can make your reader undaerstandable.
+
+$brand-primary: #4990f8
+$brand-success: #5cb85c
+$brand-warning: #f0ad4e
+$brand-danger:  #d9534f
+$brand-info:    #5bc0de
+
+
+// Color: Scaffolding
+// Apply or add some colors.
+$body-background:          $white
+$body-text-color:          $black-80
+
+
+// Selection color
+// You can see it when you highlight text
+$selection-transparentize: 0
+$selection-text-color:     $white
+
+//------------------------------------
+//    $RESPONSIVE
+//------------------------------------
+
+$lap-start:         62.5em!default
+$desk-start:        112.5em!default
+// $desk-wide-start:   1400px!default

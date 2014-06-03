@@ -1,0 +1,25 @@
+footer.site__footer.wrap
+  .grid
+    .grid__col--1-of-3.footer__info
+      h5.footer__title
+        | Info
+      p
+        = data.ogp.description
+    .grid__col--1-of-3.footer__info
+      h5.footer__title
+        | Colophon
+      p
+        = data.content.footer.colophon
+    .grid__col--1-of-3.footer__info
+      h5.footer__title
+        | More?
+      p.mb0
+        = data.content.footer.hello
+      nav.footer__nav
+        a href="#" Designers
+        a href="#" Resources
+.footer__copyright.wrap
+  p
+    | © 2014 Shota Setoguchi
+    br
+    | Made with great respect in Tokyo :)

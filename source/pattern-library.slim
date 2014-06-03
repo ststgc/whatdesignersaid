@@ -1,0 +1,128 @@
+---
+title: PATTERN RIBRARY
+---
+
+.container
+  | This pattern library was made by following Anna Debenham’s small book “[style guide](http://maban.co.uk/projects/front-end-style-guides/)” and gained some inspirations from the [other](https://github.com/styleguide) [bunch](https://ux.mailchimp.com/patterns) [of](http://sfdc-styleguide.herokuapp.com) [libraries](https://gimmebar.com/collection/4ecd439c2f0aaad734000022/front-end-styleguides-and-pattern-libraries). You can change, remove, and add styles to suite for your future projects.
+
+# ヘッダー
+  ヘッダーは、パラグラフの切れ目に使います。主に、文章の内容が大きく変わったり、そのパラグラフを目立たせたい場合に使用します。**h1 ~ h3**まで利用可能です。ヘッダーを使いたい文字の頭に**「#（ハッシュ）」**をつけることで利用ができます。つけるハッシュの数に応じて、サイズやスタイルが以下のように変化します。
+
+  ここは日本語で`your name here`
+
+  # an h1 tag
+
+  ## an h2 tag
+
+  ### h3
+
+
+  # 画像
+  画像をうまく使えば、文章に説得力が生まれます。Pointerでは、好みの状況に合わせられるように、3つのスタイルで画像を表示することができます。
+
+  ## ワイド
+  <figure markdown="1">
+  ![Open](/assets/images/cover/road.jpg)
+  <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, a tempora id mollitia necessitatibus beatae autem voluptatem quas sit rem velit iure at consequatur numquam culpa ad nisi. Cumque, accusantium.</figcaption>
+  </figure>
+
+
+
+
+
+  ## ハーフキャプション
+  <figure markdown="1" class="figure--half__caption">
+  ![Osanpo](/assets/images/cover/road.jpg)
+  <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, rem, illo totam culpa earum molestias ab sed modi repellat explicabo! Doloribus, minus quae accusantium numquam magni dolorum ullam enim quia.</figcaption>
+  </figure>
+
+
+  # リスト
+  リスト表示は下記のように反映されます。
+
+  ## Unordered Lists
+  - this
+  - is
+  - a
+  - list
+      - I
+      - am
+      - inside
+      - lists
+      - of
+      - list
+
+  ## Ordered Lists
+  1. I'm one
+  2. She's two
+  3. He is three
+
+
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, tempora, eum, a aspernatur officia et corrupti alias ea perspiciatis enim similique nulla ipsa harum deleniti vitae atque porro nam ad.
+
+  ### this is heading three
+
+  Lorem  [*Bootstrap*](http://getbootstrap.com) ipsum dolor sit amet, consectetur adipisicing elit. Vel, et corporis ab nesciunt deleniti tempora laborum nobis error assumenda recusandae quasi consectetur tenetur fuga eum excepturi ex incidunt consequuntur quisquam!
+
+
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, tempora, eum, a aspernatur officia et corrupti alias ea perspiciatis enim similique nulla ipsa harum deleniti vitae atque porro nam ad.
+
+  Lorem  [*Bootstrap*](http://getbootstrap.com) ipsum dolor sit amet, consectetur adipisicing elit. Vel, et corporis ab nesciunt deleniti tempora laborum nobis error assumenda recusandae quasi consectetur tenetur fuga eum excepturi ex incidunt consequuntur quisquam!
+
+  > Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, a cupiditate error similique ullam mollitia eveniet quod eum iusto saepe soluta quisquam consectetur perspiciatis dolor asperiores fuga iure reprehenderit! Laborum.
+
+
+  ###Transitions
+
+  ####jquery-pjax
+
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, illum, officiis optio iusto aliquam nihil fugiat ea quasi molestias culpa iste cumque praesentium eius delectus harum modi facere cum sequi.
+
+  ~~~~
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, ad placeat soluta porro molestias! A, non, possimus quasi dolores provident maxime cumque sunt adipisci ducimus alias quisquam recusandae ab natus!
+  ~~~~
+
+
+  _First published in my old website and reposted on [Lifehacker](http://lifehacker.com/5899592/overthinking-and-your-child+like-mind)._
+
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus tenetur asperiores expedita blanditiis cumque. Saepe, aperiam quam esse animi est! Distinctio, incidunt ratione eius sit impedit sint fugit quae similique.
+
+
+  [Mark Otto](http://markdotto.com) merged my [first pull request](https://github.com/twbs/bootstrap/pull/11536) into Bootstrap. Just some additional CSS to add previously unsupported button dropdowns to justified button groups. Here's a demo.
+
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, tenetur numquam remnobis recusandae cumque sequi officia sint error maxime. Nemo magnam ea nulla in quasi dolorem vel
+
+  ex. Accusantium.
+
+
+
+
+  ####Cross-fade
+
+  At this point, pjax works. But it feels like teleportation. We need to add transitions and this is how they will work.
+
+
+  1. Clone the element to be replaced.
+  2. Stack it on top of the original.
+  3. Replace the original (handled by plugin)
+  4. Fade out the clone.
+  5. Remove the clone.
+
+
+  ~~~
+  / Navigation (About, and Archive)
+  nav.header-nav
+      = link_to 'Editor\'s note', "/editors-note", :class => 'header-nav--link'
+      = link_to 'Archive', "/archive", :class => 'header-nav--link'
+  ~~~
+
+
+
+  At `pjax:end`, fade out `#clone` and restore scrolling. If you have elements in the loaded DOM that has to be processed by JavaScript, be sure to reinitialize them here.
+
+
+  ###Further Reading
+
+  * [Medium-style page transitions \| Codrops](http://tympanus.net/codrops/2013/10/30/medium-style-page-transition/)
+  * [Introducing Turbolinks for Rails 4.0 – GeekMonkey](http://geekmonkey.org/articles/28-introducing-turbolinks-for-rails-4-0)
+ -->

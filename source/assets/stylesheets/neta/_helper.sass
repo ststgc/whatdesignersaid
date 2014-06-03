@@ -1,0 +1,42 @@
+//------------------------------------
+//    Neta: Helper
+//------------------------------------
+
+
+
+// Add a help cursor to any element that gives the user extra information on
+//  * `:hover`.
+.informative
+  cursor: help !important
+
+
+// Mute an object by reducing its opacity.
+.muted
+  opacity: 0.5 !important
+  filter: alpha(opacity = 50) !important
+
+
+// Apply capital case to an element (usually a `strong`).
+.caps
+  text-transform: uppercase !important
+
+
+// Hide content off-screen without resorting to `display:none;`
+=accessibility
+  border: 0 !important
+  clip: rect(0 0 0 0) !important
+  height: 1px !important
+  margin: -1px !important
+  overflow: hidden !important
+  padding: 0 !important
+  position: absolute !important
+  width: 1px !important
+
+.ab,
+.vh
+  +accessibility
+
+
+// In case you want to remove margins
+.mb0
+  margin-bottom: 0
