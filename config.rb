@@ -150,8 +150,8 @@ end
 # http://benhollis.net/blog/2013/10/20/maruku-is-obsolete/
 # http://stackoverflow.com/questions/2017001/adding-a-class-attribute-to-a-hyperlink-in-markdown
 
-set :markdown, :tables => true, :autolink => true, :gh_blockcode => true, :fenced_code_blocks => true, :with_toc_data => true, :smartypants => true
 set :markdown_engine, :kramdown
+set :markdown, :tables => true, :autolink => true, :gh_blockcode => true, :fenced_code_blocks => true, :with_toc_data => true, :smartypants => true
 
 
 
