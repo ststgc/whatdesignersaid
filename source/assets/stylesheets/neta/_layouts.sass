@@ -1,0 +1,64 @@
+//------------------------------------
+//    Neta: Layouts
+//------------------------------------
+
+
+// main
+//   height: 100vh
+//   position: relative
+//   display: -ms-flexbox
+//   display: -webkit-flex
+//   display: flex
+//   -webkit-justify-content: center
+//   -ms-flex-pack: center
+//   justify-content: center
+//   -webkit-align-items: center
+//   -ms-flex-align: center
+//   align-items: center
+
+//   >
+//     p
+//       padding:
+//         right: $baseline*2
+//         left: $baseline*2
+//       word-break: break-word
+//       // hyphens: auto
+//       font-size: $baseline
+
+//       +breakpoint(lap)
+//         max-width: 80%
+
+// .main--white
+//   background-color: rgba(255,255,255,.9)
+
+
+// .main__name
+//   color: $brand-blue
+
+// .main__role , .main__details
+//   color: $black-30
+
+
+
+
+// // Animations
+
+// .main__name
+//   // opacity: 0
+//   transform: translateY(-$baseline*2)
+//   transition: opacity .45s $easeInOutBack, transform .45s $easeInOutBack
+
+  // Using GPU to prevent fuzzy flash.
+  // Read on:
+  // http://blog.cacoo.com/ja/2013/06/03/web-paint-performance/
+  // https://developers.google.com/events/io/sessions/325091862
+  // https://developers.google.com/events/io/sessions/325933151
+  // -webkit-backface-visibility: hidden
+
+
+
+.wrap
+  max-width: 1240px
+  margin: 0 auto
+
+

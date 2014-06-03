@@ -1,0 +1,38 @@
+---
+pageable: true
+per_page: 5
+---
+
+.wrap
+
+  - page_articles.each_with_index do |article, i|
+    section.section__item
+      p
+        = article.data.quote
+    aside.sidenotes
+      .grid
+        / .grid__col--1-of-6.grid__col--push-2-of-6
+        /   figure
+        /     = image_tag 'massimo.jpeg'
+        .grid__col--3-of-6
+          - if article.data.images
+            figure.image-columns
+              - article.data.images.each do |f|
+                = image_tag "#{f}"
+
+
+        .grid__col--3-of-6
+          span.item__label
+            | Designer:
+          span.item__designer
+            = article.data.tag
+          span.item__label
+            | Found in:
+          a.item__link href="#{article.data.found_url}"
+            = article.data.found_title
+          span.item__label
+            | Memo:
+          span.item__memo
+            = article.body
+
+

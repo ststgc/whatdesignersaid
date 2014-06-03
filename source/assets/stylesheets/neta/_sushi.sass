@@ -1,0 +1,196 @@
+//------------------------------------
+//    Neta: Sushi
+//    The css ilustration is highly inspired by Sushi Blocks,
+//    shiny work from cocopon-san.
+//    http://dribbble.com/shots/722183-Sushi-Blocks
+//------------------------------------
+
+// Sushi config
+$sushi-base: $baseline
+$sushi-border-size: 0.11111rem  // Aproximately 2px
+
+// Colors
+$color-maguro: hsl(9, 100%, 77%)
+$color-tamago: hsl(47.9,100%,58.2%)
+$color-ebi: hsl(24.3,64.5%,58%)
+$color-nori: hsl(68.6,10.4%,13.1%)
+$color-hotate: hsl(20.4,67.6%,85.5%)
+$color-ika: hsl(40,15.4%,84.7%)
+$color-salmon: hsl(28.3,84.1%,67.8%)
+
+
+// Nigiri: Base
+.sushi-geta
+  margin:
+    bottom: $baseline/2
+  transition: margin .1s .1s $easeInQuad
+
+
+  +breakpoint(lap)
+    margin:
+      top: -$baseline*4.5
+      bottom: 0
+
+  // +breakpoint(lap)
+  //   padding:
+  //     top: $baseline*7
+  //     bottom: $baseline*4
+
+  > [class*="nigiri--"]
+    // Shari
+    position: relative
+    display: inline-block
+    width: $sushi-base*2
+    height: $sushi-base
+    margin:
+      right: $sushi-base
+      bottom: $sushi-base
+    background-color: #FFF
+    border-radius: 0 0 $sushi-border-size*2 $sushi-border-size*2
+
+    &:before
+      // Neta
+      content: ''
+      position: absolute
+      left: - $sushi-border-size
+      bottom: 100%
+      margin:
+        bottom: -$sushi-base/2
+      width: $sushi-base*2
+      height: $sushi-base
+      border-radius: $sushi-border-size
+      box-shadow: inset 0 (-$sushi-border-size) rgba(0,0,0,.05)
+
+  // Nigiri center stuff
+  > [class*="nigiri__center--"]
+    &:after
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      bottom: 0
+      right: 0
+      width: $sushi-base/2
+
+
+
+// maguro
+.nigiri--maguro
+  border: $sushi-border-size solid transparentize($color-maguro, .7)
+  &:before
+    background: linear-gradient(45deg, $color-maguro, darken($color-maguro, 20%))
+
+// Tamago
+.nigiri--tamago
+  border: $sushi-border-size solid transparentize($color-tamago, .7)
+  &:before
+    background: linear-gradient(45deg, $color-tamago, darken($color-tamago, 5%))
+
+.nigiri__center--tamago
+  &:after
+    background: $color-nori
+    height: $sushi-base*1.5 - $sushi-border-size
+    margin: auto
+    margin-bottom: - ($sushi-border-size/2)
+
+// White background
+.nigiri--white
+  &:after
+    content: ''
+    position: absolute
+    z-index: 1
+    left: - $sushi-border-size
+    bottom: 100%
+    margin:
+      bottom: -$sushi-base/2
+    width: $sushi-base*2
+    height: $sushi-base
+    border-radius: $sushi-border-size
+    background-color: #fff
+
+
+// Ebi
+.nigiri--ebi
+  border: $sushi-border-size solid transparentize($color-ebi, .7)
+  &:before
+    z-index: 10
+    background: linear-gradient(90deg, transparent 10%, rgba(0,0,0,.05) 10%), linear-gradient(90deg, transparent 20%, rgba(0,0,0,.05) 20%), linear-gradient(90deg, transparent 40%, rgba(0,0,0,.05) 40%), linear-gradient(90deg, transparent 60%, rgba(0,0,0,.05) 60%), linear-gradient(90deg, transparent 80%, rgba(0,0,0,.05) 80%), linear-gradient(90deg, transparent, $color-ebi 100%)
+
+// Hotate
+.nigiri--hotate
+  border: $sushi-border-size solid transparentize($color-hotate, .7)
+  &:before
+    background: linear-gradient(45deg, $color-hotate, darken($color-hotate, 10%))
+
+.nigiri__center--hotate
+  &:after
+    background: lighten($color-hotate, 5%)
+    height: $sushi-base
+    margin: auto
+    margin-bottom: $sushi-base/2.5
+
+
+
+// Ika
+.nigiri--ika
+  border: $sushi-border-size solid transparentize($color-ika, .7)
+  &:before
+    z-index: 10
+    background: linear-gradient(90deg, transparent 10%, rgba(255,255,255,.05) 10%), linear-gradient(90deg, transparent 20%, rgba(255,255,255,.05) 20%), linear-gradient(90deg, transparent 40%, rgba(255,255,255,.05) 40%), linear-gradient(90deg, transparent 60%, rgba(255,255,255,.05) 60%), linear-gradient(90deg, transparent 80%, rgba(255,255,255,.05) 80%), linear-gradient(90deg, transparent, $color-ika 100%)
+
+
+// Salmon
+.nigiri--salmon
+  border: $sushi-border-size solid transparentize($color-salmon, .8)
+  &:before
+    background: linear-gradient(45deg, $color-salmon, lighten($color-salmon, 25%))
+
+
+
+
+
+
+
+// Animation
+.sushi-geta
+  > [class*="nigiri--"]
+    opacity: 0
+    transform: translateY(-$baseline*4)
+    transition: opacity .45s $easeInOutBack, transform .45s $easeInOutBack
+
+    // Using GPU to prevent fuzzy flash.
+    // Read on:
+    // http://blog.cacoo.com/ja/2013/06/03/web-paint-performance/
+    // https://developers.google.com/events/io/sessions/325091862
+    // https://developers.google.com/events/io/sessions/325933151
+    -webkit-backface-visibility: hidden
+
+    &:nth-child(1)
+      transform: rotate(-10deg) translateY(-$baseline*4)
+      transition: opacity .5s $easeInOutBack, transform .5s $easeInOutBack
+
+    &:nth-child(3)
+      transform: rotate(5deg) translateY(-$baseline*4)
+
+
+$sushi-animation-delay: 0.3s
+
+.js-loaded
+  .sushi-geta
+    > [class*="nigiri--"]
+      &
+        opacity: 1
+        transform: translateY(0) translateX(0) rotate(0)
+      &:nth-child(1)
+        transition-delay: $sushi-animation-delay*3.4
+      &:nth-child(2)
+        transition-delay: $sushi-animation-delay
+      &:nth-child(3)
+        transition-delay: $sushi-animation-delay*4
+      &:nth-child(4)
+        transition-delay: $sushi-animation-delay*1.5
+      &:nth-child(5)
+        transition-delay: $sushi-animation-delay*2.8
+      &:nth-child(6)
+        transition-delay: $sushi-animation-delay*3.7
+
