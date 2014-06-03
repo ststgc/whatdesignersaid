@@ -1,0 +1,1 @@
+(function(){$(window).load(function(){return $("html").addClass("js-loaded")})}).call(this);
