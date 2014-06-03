@@ -1,0 +1,56 @@
+//------------------------------------
+//    Neta: Tags
+//------------------------------------
+
+
+.header__tag
+  height: 100vh
+  position: relative
+  display: -ms-flexbox
+  display: -webkit-flex
+  display: flex
+  // -webkit-justify-content: center
+  // -ms-flex-pack: center
+  // justify-content: center
+  -webkit-align-items: center
+  -ms-flex-align: center
+  align-items: center
+
+.tag__title
+  font-size: $baseline*1.5
+  color: $black-80
+
+  +breakpoint(lap)
+    font-size: $baseline*3
+
+.tag__title-lists
+  margin:
+    bottom: $baseline*2
+
+  > .tag__title
+    margin:
+      bottom: $baseline
+
+
+
+.tag__item-lists
+  margin:
+    bottom: $baseline*4
+
+.tag__item-list
+  display: block
+  width: 100%
+  padding:
+    top: $baseline
+    bottom: $baseline
+  color: $black-80
+  text-decoration: none
+  border:
+    top: 1px solid $black-10
+  &:hover
+    color: $black-30
+
+  &:nth-child(2n+1)
+    > a
+      color: darken($brand-primary, 25%)
+
