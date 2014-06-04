@@ -4,15 +4,24 @@ per_page: 12
 ---
 
 .wrap
+  / ul
+  /   - blog.tags.each do |tag, articles|
+  /     li
+  /       h5= tag
+  /       ul
+  /         - articles.each do |article|
+  /           li
+  /             a href=article.url = article.title
+
   header.header__tag
     .tag__title
       = tagname
 
   .grid.tag__item-lists
-    .grid__col--push-1-of-2
-      a.tag__item-list href="" Design is a discipline, a creative process with its own rules, controlling the consistency of its output toward its objective in the most direct and expressive way.
-      a.tag__item-list href="" Dont feel, think!
-
+    .grid__col--1-of-2.grid__col--push-1-of-2
+      - blog.tags.each do |tag, articles|
+        - articles.each do |article|
+          a.tag__item-list href=article.url = article.data.quote
 
   / section.tag__title-lists
   /   article.tag__title

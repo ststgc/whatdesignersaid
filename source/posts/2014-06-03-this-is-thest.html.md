@@ -1,7 +1,7 @@
 ---
 title: this is thest
 date: 2014-06-03 08:48 JST
-tag: Massimo Vignelli
+tags: Massimo Vignelli
 quote: Design is a discipline, a creative process with its own rules, controlling the consistency of its output toward its objective in the most direct and expressive way.
 found_title: Vignelli Canon
 found_url: http://www.vignelli.com/canon.pdf

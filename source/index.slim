@@ -9,7 +9,7 @@ per_page: 5
     section.section__item
       p
         = article.data.quote
-    aside.sidenotes
+    aside.sidenote
       .grid
         .grid__col--3-of-6
           - if article.data.images
@@ -20,23 +20,17 @@ per_page: 5
 
         .grid__col--3-of-6
           span.item__label
-            | Designer:
-          span.item__designer
-            = article.data.tag
+            | by:
+          span.item__name
+            = article.data.tags
           span.item__label
-            | Found in:
+            | from:
           a.item__link href="#{article.data.found_url}"
             = article.data.found_title
 
           - if article.data.has_memo
             span.item__label
-              | Memo:
+              | memo:
             span.item__memo
               = article.body
-
-  - if paginate && num_pages > 1
-    - if prev_page
-      = link_to '&larr;', prev_page
-
-
 

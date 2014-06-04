@@ -7,9 +7,9 @@ require 'kramdown'
 # - - -
 
 # page "/index.html", :layout => "top"
-# page "404.html", :layout => false, directory_index: false
+page "404.html", :layout => false, directory_index: false
 # page "/sitemap.xml", :layout => "sitemap.xml"
-# page "/feed.rss", :layout => "feed.rss"
+page "/feed.rss", :layout => "feed.rss"
 # page "/atom.xml", :layout => "atom.xml"
 
 # With no layout

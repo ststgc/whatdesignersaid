@@ -1,0 +1,85 @@
+//------------------------------------
+//    Neta: Styleguide
+//------------------------------------
+
+// Style only apply for styleguide
+
+.styleguide__typeface, .styleguide__color
+  margin:
+    bottom: $baseline*7
+
+
+.styleguide-color__container
+  > div
+    margin-bottom: $baseline
+
+[class*="styleguide-color__box--"]
+  display: block
+  width: 100%
+  height: $baseline/4
+
+.styleguide-color__box--blue
+  background-color: $brand-primary
+
+.styleguide-color__box--black-20
+  background-color: $black-20
+
+
+
+.styleguide-color__box--black-50
+  background-color: $black-50
+
+.styleguide-color__box--black-80
+  background-color: $black-80
+
+
+.styleguide-typeface__container
+  p
+    margin-bottom: $baseline/2
+
+.styleguide-typeface__name
+  color: $brand-primary
+  font-size: $baseline/2
+  font-weight: bold
+  margin-bottom: $baseline/2
+
+.styleguide-typeface__label
+  font-size: $baseline/2
+  color: $black-20
+  font-weight: bold
+
+.styleguide-typeface__extra-small
+  font-size: $baseline/2
+.styleguide-typeface__medium
+  font-size: $baseline
+.styleguide-typeface__large
+  font-size: $baseline*2
+
+
+// Descriptions
+.styleguide__label
+  display: block
+  font-size: $baseline/2
+  color: $brand-primary
+
+.styleguide
+  .section__item
+    p:before
+      @extend .styleguide__label
+      content: "{Quote: the essence of designer's effort}"
+
+  .sidenote
+    .sidenote__eyecatch
+      &:before
+        @extend .styleguide__label
+        content: '{Supporting image that could elevate the quote above}'
+    .sidenote__text
+      &:before
+        @extend .styleguide__label
+        content: '{Sidenote; name, source, and sometimes my sloppy memo}'
+      &:after
+        @extend .styleguide__label
+        content: '{/Thanks for your patient. That’s the end of my memo.}'
+
+
+
