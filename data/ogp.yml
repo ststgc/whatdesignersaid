@@ -22,7 +22,7 @@ twitter:
 
 og:
   locale: 'en_EN'
-  image: ['http://whatdesignersaid.com/favicon.png']
+  image: ['http://whatdesignersaid.com/assets/images/logo.png']
   url: *url
   title: *title
   site_name: *title
