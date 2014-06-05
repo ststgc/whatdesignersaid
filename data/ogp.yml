@@ -2,7 +2,7 @@
 # title, description, type etc is the same.
 
 url: &url
-  'http://whatdesignerssayd.com'
+  'http://whatdesignersaid.com'
 title: &title
   'What designer said'
 description: &description
@@ -22,7 +22,7 @@ twitter:
 
 og:
   locale: 'en_EN'
-  image: ['http://whatdesignersaid.com/assets/images/logo.png']
+  image: 'http://whatdesignersaid.com/assets/images/logo.png'
   url: *url
   title: *title
   site_name: *title
