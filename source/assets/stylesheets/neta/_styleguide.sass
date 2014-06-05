@@ -4,6 +4,10 @@
 
 // Style only apply for styleguide
 
+[class*="styleguide__"]
+  h2
+    font-weight: bold
+
 .styleguide__typeface, .styleguide__color
   margin:
     bottom: $baseline*7
@@ -66,6 +70,7 @@
   .section__item
     p:before
       @extend .styleguide__label
+      font-weight: normal
       content: "{Quote: the essence of designer's effort}"
 
   .sidenote
