@@ -1,56 +1,27 @@
 //------------------------------------
-//    Neta: Layouts
+//    Neta: Section
 //------------------------------------
 
-// .container > [class*="section--"]
-//   height: 100vh
-//   position: relative
-//   display: -ms-flexbox
-//   display: -webkit-flex
-//   display: flex
-//   -webkit-justify-content: center
-//   -ms-flex-pack: center
-//   justify-content: center
-//   -webkit-align-items: center
-//   -ms-flex-align: center
-//   align-items: center
 
-// .section--main
-//   background-color: $brand-blue
-
-
-
-// .section__title
-//   font-weight: 500
-//   margin-bottom: $baseline/2
-
-
-// .section__subtitle
-//   color: $black-30
-//   margin-bottom: $baseline/2
-
-
-
-.section__item
-  position: relative
-  margin:
-    top: $baseline*5
+.section__quote
+  padding:
+    top: $baseline*2
     bottom: $baseline
-  font-size: $baseline
-  font-weight: bold
-  letter-spacing: -0.05rem
-
 
   +breakpoint(lap)
-    margin:
-      bottom: $baseline*2
+    padding:
+      top: $baseline*5
 
-    p
-      font-size: $baseline*1.2
 
-  +breakpoint(desk)
-    margin:
-      top: $baseline*10
+
+  > p
+    font-weight: bold
+    letter-spacing: -0.05rem
+
+    +breakpoint(lap)
+      font-size: $baseline
+
+
 
 .image-columns
   column-count: 3

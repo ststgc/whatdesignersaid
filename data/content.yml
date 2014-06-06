@@ -1,4 +1,4 @@
-# inline text of content.
+# Footer content / Not used
 
 footer:
   colophon: 'Designed, developed, and maintained by <a href="https://twitter.com/ststgc" title="shota setoguchi on twitter" target="_blank">Shota Setoguchi</a>. Build with <a href="http://middlemanapp.com" target="_blank" title="Middleman">Middleman</a>. Hosted on <a href="https://github.com/ststgc/whatdesignersaid" title="Source code on GitHub" target="_blank">GitHub</a>. All type is set in Avenir Next. See <a href="/styleguide" title="Style guide">the style guide</a> or view <a href="https://github.com/ststgc/whatdesignersaid" title="Source code on GitHub" target="_blank">the source</a>.'

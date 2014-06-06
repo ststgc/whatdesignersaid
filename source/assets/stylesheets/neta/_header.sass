@@ -1,4 +1,49 @@
 //------------------------------------
-//    Neta: Footer
+//    Neta: Header
 //------------------------------------
 
+// Header wraps logo, tagline, and links
+header[role="banner"]
+  margin-top: $baseline
+  border-top: 1px solid $black-70
+  padding:
+    top: $baseline/2
+  @extend .cf
+
+.site__logo
+  font-weight: bold
+  color: $black-70
+  border-bottom: none
+  text-decoration: none
+  display: block
+
+  +breakpoint(lap)
+    float: left
+
+
+
+// Navigation
+nav[role="navigation"]
+  display: block
+
+  +breakpoint(lap)
+    float: right
+
+.nav__link
+  display: inline-block
+  margin:
+    right: $baseline/2
+  text-decoration: none
+  &:last-child
+    margin-right: 0
+
+// - active state
+.library
+  .nav__link:nth-child(2n)
+    color: $black-70
+    font-weight: bold
+
+.information
+  .nav__link:nth-child(3n)
+    color: $black-70
+    font-weight: bold

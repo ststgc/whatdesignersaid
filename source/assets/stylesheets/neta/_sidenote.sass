@@ -5,7 +5,11 @@
 .sidenote
   color: $black-50
   margin:
-    bottom: $baseline*7
+    bottom: $baseline*2
+
+  +breakpoint(lap)
+    margin:
+      bottom: $baseline*5
 
   +breakpoint(desk)
     margin:

@@ -2,10 +2,10 @@
 # The humans responsible & technology colophon
 
 # AUTHOR
-  Designer: Shota Setoguchi 
+  Designer: Shota Setoguchi
   Contact: ststgc@gmail.com
   Twitter: @ststgc
-  From: Tokyo, Japan
+  From: Setagaya, Tokyo, Japan
 
 
 # SITE

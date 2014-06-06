@@ -6,7 +6,7 @@ url: &url
 title: &title
   'What designer said'
 description: &description
-  '“What designer said” is a collection of quotes from people who make things for human-being. Learn how they thinking by touching the words they said.'
+  '“What designer said” is a collection of quotes from people who make things for human-being. Learn the process of achievement by touching the words they said.'
 locale: &locale
   ja: 'en'
 keywords: &keyworkds

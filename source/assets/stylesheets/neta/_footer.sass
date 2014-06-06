@@ -1,11 +1,12 @@
 //------------------------------------
 //    Neta: Footer
+//
 //------------------------------------
 
 
 .site__footer
   padding:
-    top: $baseline
+    top: $baseline*10
     bottom: $baseline
   border:
     top: 1px solid $black-10
@@ -46,10 +47,17 @@
 
 // Copyright
 .footer__copyright
-  font-size: $baseline/2
+  border-top: 1px solid $black-70
   text-align: right
-  letter-spacing: 0.07rem
+  font-size: $baseline/2
+
+  margin:
+    top: $baseline*2
   padding:
     top: $baseline/2
     bottom: $baseline
 
+
+  +breakpoint(lap)
+    br
+      display: none

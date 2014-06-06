@@ -22,9 +22,9 @@ html
   font-feature-settings: "onum" 1
 
 
-  // fit content to window size
-  +breakpoint(lap)
-    font-size: 137.5%
+  // // fit content to window size
+  // +breakpoint(lap)
+  //   font-size: 100%
 
 
 
@@ -36,10 +36,18 @@ body
     right: $baseline/2
     left: $baseline/2
 
+  max-width: 1200px
+  margin: 0 auto
+
+  // font-weight: 400
+
+
   +breakpoint(lap)
     padding:
       right: $baseline
       left: $baseline
+
+
 
 
 

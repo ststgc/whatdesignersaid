@@ -1,0 +1,52 @@
+//------------------------------------
+//    Neta: Library
+//------------------------------------
+
+.library__section
+  font-size: $baseline/2
+  padding:
+    top: $baseline
+    bottom: $baseline
+
+  h3
+    font-size: $baseline/2
+    font-weight: bold
+    margin-bottom: $baseline/2
+
+
+
+.library__links
+  +breakpoint(lap)
+    column-count: 2
+    column-gap: $baseline
+
+
+  > a
+    color: $black-80
+    text-decoration: none
+    display: block
+    +breakpoint(lap)
+      margin-bottom: 0
+
+    &:hover, &:focus
+      color: $link-color-hover
+
+    &:visited
+      color: $black-20
+
+
+[data-type="podcast"]
+  &:after
+    content: '/ podcast'
+    font-size: $baseline/2
+    color: $brand-warning
+    font-weight: bold
+    margin-left: $baseline/5
+
+[data-type="book"]
+  &:after
+    content: '/ book'
+    font-size: $baseline/2
+    color: $brand-info
+    font-weight: bold
+    margin-left: $baseline/5

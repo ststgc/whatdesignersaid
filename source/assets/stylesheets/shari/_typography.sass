@@ -10,14 +10,9 @@
 
 h1
   font-size: $baseline*3
-  // margin:
-  //   bottom: $baseline*2
 
 h2
   font-size: $baseline
-  margin:
-    top: $baseline
-    bottom: $baseline
 
 
 h3, h4
@@ -37,31 +32,18 @@ em
 
 // Links
 $link-color:       $black-40
-$link-color-hover: lighten($link-color, 20%)
+$link-color-hover: $brand-primary
 
 a, [data-href]
   color: $link-color
-  text-decoration: underline
   cursor: pointer
-  transition: .1s
-  transition-timing-function: ease-in-out
+  transition: .2s
+  transition-timing-function: ease-out
+  transition-property: color
+  text-decoration: underline
 
   &:hover,
   &:focus
     color: $link-color-hover
     text-decoration: none
 
-
-blockquote
-  padding-left: $baseline
-  margin:
-    left: -$baseline
-    bottom: $baseline
-  border-left: 0.11111rem solid transparentize($black-10, .1)
-
-  font-family: $font-Sans
-  color: $black-40
-
-
-code
-  font-family: Consolas, 'Liberation Mono', Courier, monospace
