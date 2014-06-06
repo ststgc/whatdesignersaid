@@ -6,22 +6,6 @@ pageable: false
   h2.bathtab
     | Information
   p
-    = data.library.description
-section.library__section
-  .grid
-    .grid__col--1-of-5
-      h3
-        | Typography
-    .grid__col--4-of-5
-      .library__links
-        - for library in data.library.typography.each do
-          = partial "library", locals: { library: library }
-section.library__section
-  .grid
-    .grid__col--1-of-5
-      h3
-        | Grid
-    .grid__col--4-of-5
-      .library__links
-        - for library in data.library.grid.each do
-          = partial "library", locals: { library: library }
+    |  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quod, architecto maxime harum, asperiores consectetur dolorum quos nobis voluptas hic. Natus est fugit pariatur tenetur reiciendis, temporibus facilis doloremque rem?
+
+  = image_tag "sake.jpg"

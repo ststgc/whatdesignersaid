@@ -3,16 +3,14 @@
 //------------------------------------
 
 
+body > header[role="banner"]+section.section__quote
+  +breakpoint(lap)
+    padding-top: $baseline*5
+
 .section__quote
   padding:
     top: $baseline*2
     bottom: $baseline
-
-  +breakpoint(lap)
-    padding:
-      top: $baseline*5
-
-
 
   > p
     font-weight: bold
@@ -40,4 +38,34 @@
       margin:
         bottom: $baseline
 
+
+
+
+// Pagination
+.pagination
+  border-top: 1px solid $black-10
+  @extend .cf
+
+  & > a
+    display: block
+    width: percentage(1/2)
+    padding:
+      top: $baseline
+      bottom: $baseline
+    text-decoration: none
+
+  & > .next
+    float: right
+    text-align: right
+
+    &:after
+      margin-left: $baseline/5
+      content: '>'
+
+  & > .previous
+    float: left
+
+    &:before
+      margin-right: $baseline/5
+      content: '<'
 
