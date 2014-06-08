@@ -47,7 +47,40 @@ head
 
   body class= "#{page_classes}"
     = partial "header"
-    == yield
+
+
+
+
+    - if is_blog_article?
+      section.section__quote
+        p
+          = current_article.data.quote
+        aside.sidenote
+          .grid
+            .grid__col--3-of-6
+              - if current_article.data.images
+                figure.image-columns
+                  - current_article.data.images.each do |f|
+                    = image_tag "#{f}"
+
+
+            .grid__col--3-of-6
+              span.item__label
+                | by:
+              span.item__name
+                = current_article.data.tags
+              span.item__label
+                | from:
+              a.item__link href="#{current_article.data.found_url}" target="_blank"
+                = current_article.data.found_title
+
+              - if current_article.data.has_memo
+                span.item__label
+                  | memo:
+                span.item__memo
+                  = current_article.body
+    - else
+      == yield
     = partial "footer"
 
 

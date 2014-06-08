@@ -1,7 +1,14 @@
 # Library
 description:
   >
-    This page is simple overview of “What designer said.” By the way, heve you checked Robert Lenne’s <a href="http://robertlenne.com/requiredreading/" title="REQUIRED READING FOR PRODUCT DESIGNERS" target="_blank">REQUIRED READING FOR PRODUCT DESIGNERS</a>? If you haven’t, you’d be better off for checking his lists first! Suggestions are always welcome, feel free to <a href="mailto:ststgc@gmail.com">drop me a line</a>.
+    "This page is simple overview of “What designer said.” By the way, heve you checked Robert Lenne’s <a href="http://robertlenne.com/requiredreading/" title="REQUIRED READING FOR PRODUCT DESIGNERS" target="_blank">REQUIRED READING FOR PRODUCT DESIGNERS</a>? If you haven’t, you’d be better off for checking his lists first! Suggestions are always welcome, feel free to <a href="mailto:ststgc@gmail.com">drop me a line</a>."
+design_at_large:
+  - item: Vignelli Canon
+    type: book
+    url: http://www.amazon.co.jp/The-Vignelli-Canon-Massimo/dp/3037782250
+  - item: The Great Discontent
+    url: http://thegreatdiscontent.com
+
 typography:
   - item: "Wilson Miner - When We Build"
     type: podcast
@@ -45,3 +52,11 @@ grid:
     url: http://whatdesignersaid.com
   - item: Picturefill
     url: http://scottjehl.github.io/picturefill/
+
+behind_the_scenes:
+  - item: "Interview: Georg Petschnigg of FiftyThree, makers of Paper for iPad"
+    type: video
+    url: http://www.youtube.com/watch?v=yzlZiajRttY
+  - item: "hoho"
+    type: video
+    url: http://www.youtube.com/watch?v=yzlZiajRttY

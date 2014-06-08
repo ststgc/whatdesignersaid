@@ -3,55 +3,48 @@ pageable: true
 per_page: 12
 ---
 
-.wrap
-  / ul
-  /   - blog.tags.each do |tag, articles|
-  /     li
-  /       h5= tag
-  /       ul
-  /         - articles.each do |article|
-  /           li
-  /             a href=article.url = article.title
+- blog.tags.each do |tag, articles|
 
   header.header__tag
     h2.tag__title
-      = tagname
+      = tag
 
   .grid.tag__item-lists
     .grid__col--1-of-2.grid__col--push-1-of-2
-      - blog.tags.each do |tag, articles|
-        - articles.each do |article|
-          a.tag__item-list href=article.url = article.data.quote
+      - articles.each do |tagname|
+        h2.tag__title
+          = tag
 
-  / section.tag__title-lists
-  /   article.tag__title
-  /     | Josef Muller-Brockmann
 
-  /   article.tag__title
-  /     | Massimo Vignelli
+/ section.tag__title-lists
+/   article.tag__title
+/     | Josef Muller-Brockmann
 
-  /   article.tag__title
-  /     | Kozuka Shozi
+/   article.tag__title
+/     | Massimo Vignelli
 
-  /   article.tag__title
-  /     | Josef Muller-Brockmann
+/   article.tag__title
+/     | Kozuka Shozi
 
-  /   article.tag__title
-  /     | Josef Muller-Brockmann
+/   article.tag__title
+/     | Josef Muller-Brockmann
 
-  /   article.tag__title
-  /     | Josef Muller-Brockmann
+/   article.tag__title
+/     | Josef Muller-Brockmann
 
-  /   article.tag__title
-  /     | Josef Muller-Brockmann
+/   article.tag__title
+/     | Josef Muller-Brockmann
 
-  /   article.tag__title
-  /     | Josef Muller-Brockmann
+/   article.tag__title
+/     | Josef Muller-Brockmann
 
-  /   article.tag__title
-  /     | Josef Muller-Brockmann
+/   article.tag__title
+/     | Josef Muller-Brockmann
 
-  /   article.tag__title
-  /     | Josef Muller-Brockmann
+/   article.tag__title
+/     | Josef Muller-Brockmann
+
+/   article.tag__title
+/     | Josef Muller-Brockmann
 
 

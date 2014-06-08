@@ -7,8 +7,6 @@ found_title: The Gently Mad
 found_url: http://goodstuff.fm/thegentlymad/34
 images:
   - gentlymad/gentlymad.png
-  - gentlymad/kobe-tower.png
-
 has_memo: true
 
 ---

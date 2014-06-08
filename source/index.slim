@@ -33,6 +33,9 @@ per_page: 5
             span.item__memo
               = article.body
 
+
+
+// Footer Pagination
 nav.pagination
   - if next_page
     =link_to "Next", next_page.url, :class => "next"

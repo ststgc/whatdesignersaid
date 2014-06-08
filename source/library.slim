@@ -3,10 +3,20 @@ pageable: false
 ---
 
 .large-type-header
-  h2.bathtab
+  h2.ashiyu
     | Library
   p
     = data.library.description
+section.library__section
+  .grid
+    .grid__col--1-of-5
+      h3
+        | Design at large
+    .grid__col--4-of-5
+      .library__links
+        - for library in data.library.design_at_large.each do
+          = partial "library", locals: { library: library }
+
 section.library__section
   .grid
     .grid__col--1-of-5
@@ -24,4 +34,14 @@ section.library__section
     .grid__col--4-of-5
       .library__links
         - for library in data.library.grid.each do
+          = partial "library", locals: { library: library }
+
+section.library__section
+  .grid
+    .grid__col--1-of-5
+      h3
+        | Behind the scenes
+    .grid__col--4-of-5
+      .library__links
+        - for library in data.library.behind_the_scenes.each do
           = partial "library", locals: { library: library }
