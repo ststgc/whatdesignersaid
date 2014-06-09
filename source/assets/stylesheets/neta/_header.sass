@@ -7,7 +7,7 @@ header[role="banner"]
   margin-top: $baseline
   border-top: 1px solid $black-70
   padding:
-    top: $baseline/2
+    top: $baseline
   @extend .cf
 
 .site__logo
@@ -16,10 +16,18 @@ header[role="banner"]
   border-bottom: none
   text-decoration: none
   display: block
+  margin:
+    bottom: $baseline
 
   +breakpoint(lap)
     float: left
+    margin-bottom: 0
 
+.logo
+  width: $baseline/1.5
+  margin:
+    right: $baseline/2
+  // border: 1px solid #000
 
 
 // Navigation
