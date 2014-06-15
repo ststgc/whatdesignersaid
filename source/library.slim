@@ -26,15 +26,6 @@ section.library__section
       .library__links
         - for library in data.library.typography.each do
           = partial "library", locals: { library: library }
-section.library__section
-  .grid
-    .grid__col--1-of-5
-      h3
-        | Grid
-    .grid__col--4-of-5
-      .library__links
-        - for library in data.library.grid.each do
-          = partial "library", locals: { library: library }
 
 section.library__section
   .grid

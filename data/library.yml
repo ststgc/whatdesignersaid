@@ -6,57 +6,41 @@ design_at_large:
   - item: Vignelli Canon
     type: book
     url: http://www.amazon.co.jp/The-Vignelli-Canon-Massimo/dp/3037782250
+  - item: 'Design: Vignelli'
+    type: book
+    url: http://www.amazon.co.jp/Design-Vignelli-Germano-Celant/dp/0847811409
+
   - item: The Great Discontent
     url: http://thegreatdiscontent.com
+  - item: Offscreen
+    type: book
+    url: http://www.offscreenmag.com
+  - item: The Gently Mad
+    type: podcast
+    url: http://goodstuff.fm/thegentlymad
+  - item: 'Dieter Rams: As Little Design As Possible'
+    type: book
+    url: http://www.amazon.co.jp/Dieter-Rams-Little-Design-Possible/dp/0714849189
+
+
+
 
 typography:
-  - item: "Wilson Miner - When We Build"
-    type: podcast
-    url: http://whatdesignersaid.com
-  - item: Picturefill
+  - item: The Elements of Typographic Style
     type: book
-    url: http://scottjehl.github.io/picturefill/
-  - item: "Wilson Miner - When We Build"
-    url: http://whatdesignersaid.com
-  - item: Picturefill
-    type: book
-    url: http://scottjehl.github.io/picturefill/
-  - item: "Wilson Miner - When We Build"
-    url: http://whatdesignersaid.com
-  - item: Picturefill
-    url: http://scottjehl.github.io/picturefill/
-  - item: "Wilson Miner - When We Build"
-    type: podcast
-    url: http://whatdesignersaid.com
-  - item: Picturefill
-    url: http://scottjehl.github.io/picturefill/
+    url: http://www.amazon.co.jp/Elements-Typographic-Style-Robert-Bringhurst/dp/0881791326
 
-grid:
-  - item: "Wilson Miner - When We Build"
-    type: podcast
-    url: http://whatdesignersaid.com
-  - item: Picturefill
+  - item: thinking with type
     type: book
-    url: http://scottjehl.github.io/picturefill/
-  - item: "Wilson Miner - When We Build"
-    url: http://whatdesignersaid.com
-  - item: Picturefill
+    url: http://www.amazon.co.jp/Thinking-Type-2nd-revised-expanded/dp/1568989695/ref=sr_1_1?s=english-books&ie=UTF8&qid=1402850072&sr=1-1&keywords=thinking+with+type
+
+  - item: Grid systems in graphic design
     type: book
-    url: http://scottjehl.github.io/picturefill/
-  - item: "Wilson Miner - When We Build"
-    url: http://whatdesignersaid.com
-  - item: Picturefill
-    url: http://scottjehl.github.io/picturefill/
-  - item: "Wilson Miner - When We Build"
-    type: podcast
-    url: http://whatdesignersaid.com
-  - item: Picturefill
-    url: http://scottjehl.github.io/picturefill/
+    url: http://www.amazon.co.jp/Systems-Graphic-Systeme-Visuele-Gestaltung/dp/3721201450/ref=sr_1_1?s=english-books&ie=UTF8&qid=1402850145&sr=1-1&keywords=grid+systems+in+graphic+design
+
+
 
 behind_the_scenes:
-  - item: "Interview: Georg Petschnigg of FiftyThree, makers of Paper for iPad"
-    type: video
-    url: http://www.youtube.com/watch?v=yzlZiajRttY
-  - item: "hoho"
+  - item: 'Interview: Georg Petschnigg of FiftyThree, makers of Paper for iPad'
     type: video
     url: http://www.youtube.com/watch?v=yzlZiajRttY

@@ -5,18 +5,42 @@
 
 body > header[role="banner"]+section.section__quote
   +breakpoint(lap)
-    padding-top: $baseline*5
+    margin-top: $baseline*5
+
+  +breakpoint(desk)
+    margin-top: $baseline*10
+
 
 .section__quote
-  padding:
+  position: relative
+  margin:
     top: $baseline*2
+  padding:
+    // top: $baseline*2
     bottom: $baseline
 
+
   > p
-    font-weight: bold
-    letter-spacing: -0.05rem
+    // Double-quotes
+    &:before
+      content: '“'
+      position: absolute
+      top: -$baseline
+      font-size: $baseline
+
+      font-family: georgia, serif
+      color: $black-20
+
+
 
     +breakpoint(lap)
+
+      // Double-quotes
+      &:before
+        top: -$baseline*2
+        left: -$baseline*4
+        font-size: $baseline*4
+
       font-size: $baseline
 
 
