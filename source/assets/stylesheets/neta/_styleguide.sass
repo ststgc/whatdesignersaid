@@ -64,10 +64,8 @@
 
 .styleguide-typeface__small
   font-size: $baseline/2
-.styleguide-typeface__medium
-  font-size: $baseline
 .styleguide-typeface__large
-  font-size: $baseline*1.5
+  font-size: $baseline
 
 
 // Descriptions
@@ -80,7 +78,10 @@
   .section__quote
     p:before
       @extend .styleguide__label
-      font-weight: normal
+      position: relative
+      top: 0
+      left: 0
+      font-family: $font-Body
       content: "{Quote: the essence of designer's effort.}"
 
   .sidenote
