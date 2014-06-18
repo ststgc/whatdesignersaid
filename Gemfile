@@ -42,7 +42,7 @@ gem "middleman-minify-html"
 gem "middleman-syntax"
 
 # Imageoptim
-gem "middleman-imageoptim", "~> 0.1.4"
+gem "middleman-imageoptim"
 
 # Favicon maker
 gem "middleman-favicon-maker"
